@@ -43,7 +43,7 @@ function setSprite(obj,x,y,fX,fY){
   }
 
               //img source/ img souce crop width and height                                              /img source orientation on canvas
-  //ctx.drawImage(obj.img,    obj.width * obj.frameX, obj.height * obj.frameY, obj.width, obj.height,      obj.x, obj.y, obj.width, obj.height);
+  ctx.drawImage(obj.img,    obj.width * obj.frameX, obj.height * obj.frameY, obj.width, obj.height,      obj.x, obj.y, obj.width, obj.height);
 }
 
 
