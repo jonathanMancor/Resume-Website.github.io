@@ -34,7 +34,7 @@ $('#okiDoor').mouseout(function () {
 
 //play oki yes
 $('#playYes').click(function () {
-  location.assign("indexProjects/oki-v5.3/home.html");
+  location.assign("indexProjects/oki-v6/index.html");
 });
 
 //play oki no
