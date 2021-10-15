@@ -41,10 +41,14 @@ function setSprite(obj,x,y,fX,fY){
     //obj.y = 0;
   //}
 
-  if(fX !== 'n'){
+  if(fX == 'n'){
+    obj.frameX = 0 ;
+  }else {
     obj.frameX = fX ;
-  }if(fY !== 'n'){
-    obj.frameY = fY ;
+  }if(fY == 'n'){
+    obj.frameY = 0 ;
+  }else {
+    obj.frameX = fY ;
   }
 
               //img source/ img souce crop width and height                                              /img source orientation on canvas
