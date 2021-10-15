@@ -36,7 +36,12 @@ function setSprite(obj,x,y,fX,fY){
   if(obj !== player){
     obj.x = x * tileSize;
     obj.y = y * tileSize;
-  }if(fX !== 'n'){
+  }else {
+    obj.x = 0;
+    obj.y = 0;
+  }
+
+  if(fX !== 'n'){
     obj.frameX = fX ;
   }if(fY !== 'n'){
     obj.frameY = fY ;
