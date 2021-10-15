@@ -25,4 +25,5 @@ button{
 }button:hover{
   font-size: 1.3em;
   color: red;
+  border: 1px solid;
 }
