@@ -42,11 +42,11 @@ function setSprite(obj,x,y,fX,fY){
   //}
 
   if(fX == 'n'){
-    obj.frameX = 0 ;
+    obj.frameX = 1 ;
   }else {
     obj.frameX = fX ;
   }if(fY == 'n'){
-    obj.frameY = 0 ;
+    obj.frameY = 1 ;
   }else {
     obj.frameX = fY ;
   }
