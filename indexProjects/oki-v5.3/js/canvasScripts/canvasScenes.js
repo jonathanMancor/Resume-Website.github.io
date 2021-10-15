@@ -33,22 +33,13 @@ const ccMapLayout = [
 
 function setSprite(obj,x,y,fX,fY){
   //set x and y before drawing on canvas
-  //if(obj !== player){
+  if(obj !== player){
     obj.x = x * tileSize;
     obj.y = y * tileSize;
-  //}else if(obj !== player){
-  //  obj.x = 0;
-    //obj.y = 0;
-  //}
-
-  if(fX == 'n'){
-    obj.frameX = 1 ;
-  }else {
+  }if(fX !== 'n'){
     obj.frameX = fX ;
-  }if(fY == 'n'){
-    obj.frameY = 1 ;
-  }else {
-    obj.frameX = fY ;
+  }if(fY !== 'n'){
+    obj.frameY = fY ;
   }
 
               //img source/ img souce crop width and height                                              /img source orientation on canvas
