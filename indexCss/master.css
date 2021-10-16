@@ -28,3 +28,10 @@ button{
   color: red;
   border: 1px solid;
 }
+
+
+select{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
