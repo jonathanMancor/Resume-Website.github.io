@@ -3,11 +3,13 @@
   margin: 0;
   padding: 0;
   font-weight: normal;
+  color: white;
 }
 
 body, html{
   width: 100%;
   height: 100%;
+  background-color: red;
 }
 
 h1{
@@ -21,16 +23,37 @@ p{
 
 button{
   font-family: 'Press Start 2P', cursive;
-  font-size: 1em;
+  font-size: 1.3em;
   border: none;
   background: none;
   margin: 15px auto;
+
   -webkit-transition: color 0.3s, font-size 0.3s;
        -moz-transition: color 0.3s, font-size 0.3s;
          -o-transition: color 0.3s, font-size 0.3s;
             transition: color 0.3s, font-size 0.3s;
 }button:hover{
-  font-size: 1.5em;
+  font-size: 2em;
+  color: white;
+}
+
+
+.cntr1_4{
+  width: 25%;
+  display: flex;
+}
+
+
+
+
+header{
+    text-align: center;
+    display: flex;
+
+    position: absolute;
+    background: none;
+    width: 100%;
+    text-wrap: wrap;
 }
 
 
@@ -38,23 +61,70 @@ section{
   display: flex;
   justify-content: center;
   text-align: center;
-  flex-direction: column;
+  z-index: 1;
 }
 
-#landingPage .mainMenu{
-  width: 300px;
-  height: 300px;
+#fourColMenu .cntr1_4 img{
+  width: 192px;
+  height: 192px;
+  margin: 0 auto 0 auto;
+}
 
-  display: flex;
+#fourColMenu .cntr1_4{
+
+  height: 100vh;
+
   justify-content: center;
   flex-direction: column;
-  margin: 10% auto;
+  margin: 0;
+}#fourColMenu .cntr1_4:nth-child(4n+1){
+  background: #ee2d7b;
+}#fourColMenu .cntr1_4:nth-child(4n+2){
+  background: #53d39b;
+}#fourColMenu .cntr1_4:nth-child(4n+3){
+  background: #fbb041;
+}#fourColMenu .cntr1_4:nth-child(4n+0){
+  background: #A459FF;
 }
+
+
+#fourColMenu .cntr1_4:nth-child(4n+1) button{
+  color: #fbb041;
+}#fourColMenu .cntr1_4:nth-child(4n+2) button{
+  color: #ee2d7b;
+}#fourColMenu .cntr1_4:nth-child(4n+3) button{
+  color: #A459FF;
+}#fourColMenu .cntr1_4:nth-child(4n+0) button{
+  color: #53d39b;
+}
+
+#fourColMenu .cntr1_4:nth-child(4n+1) button:hover{
+  color: #53d39b;
+  text-shadow: 2px 2px #A459FF;
+}#fourColMenu .cntr1_4:nth-child(4n+2) button:hover{
+  color: #A459FF;
+  text-shadow: 2px 2px #fbb041;
+}#fourColMenu .cntr1_4:nth-child(4n+3) button:hover{
+  color: #ee2d7b;
+  text-shadow: 2px 2px #53d39b;
+}#fourColMenu .cntr1_4:nth-child(4n+0) button:hover{
+  color: #fbb041;
+  text-shadow: 2px 2px #ee2d7b;
+}
+
+
+
+
+
+
+
 
 
 footer{
   width: 100%;
   height: 100px;
-
+  margin:  0;
   justify-content: flex-end;
+  background: none;
+  margin: -100px auto;
 }
