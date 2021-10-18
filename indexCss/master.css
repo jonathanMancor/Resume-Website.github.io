@@ -1,4 +1,37 @@
 
+
+
+/*scrollbar========================================*/
+*::-webkit-scrollbar {
+  width: 5px;               /* width of the entire scrollbar */
+}
+
+
+
+*::-webkit-scrollbar-track {
+  background: none;        /* color of the tracking area */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(255,255,255,0.5);    /* color of the scroll thumb */
+  border-radius: 5px;       /* roundness of the scroll thumb */
+  border: 5px solid rgba(0,0,0,0);  /* creates padding around scroll thumb */
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255,255,255,1);    /* color of the scroll thumb */
+
+}
+
+
+
+
+
+
+
+
+/*UNIVERSAL--------------------------------------------------------*/
+
 *{
   margin: 0;
   padding: 0;
@@ -10,7 +43,7 @@ body, html{
   width: 100%;
   height: 100%;
   background-color: #A459FF;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 h1{
@@ -22,6 +55,10 @@ h2{
   font-size: 2em;
 }
 h3{
+  font-family: 'VT323', monospace;
+  font-size: 1.4em;
+}
+h4{
   font-family: 'VT323', monospace;
   font-size: 1.4em;
 }
@@ -41,7 +78,7 @@ p{
 
 
 
-/*UNIVERSAL--------------------------------------------------------*/
+
 
 
 
@@ -76,27 +113,32 @@ button{
 header{
     text-align: center;
     display: flex;
-    position: absolute;
+    height: 10%;
     background: none;
     width: 100%;
     text-wrap: wrap;
 }
 
 header h3{
-  margin: 10px
+  margin: 10px;
+}
+header button{
+  margin: 0 90% 0;
+
 }
 
-
 section{
+  display: flex;
   justify-content: center;
   text-align: center;
   z-index: 1;
+  height: 80vh;
 }
 
 
 
 
-section .cntr1_4 ul{
+#fourColMenu .cntr1_4 ul{
   text-align: right;
   margin: 0 auto;
   list-style: none;
@@ -113,16 +155,18 @@ section .cntr1_4 ul{
 
 
 section .cntr1_4{
-  height: 100vh;
+  height: 100%;
   flex-direction: column;
   margin: 0;
-}section .cntr1_4:nth-child(4n+1){
+  overflow-y: scroll;
+  overflow-x: hidden;
+} .cntr1_4:nth-child(4n+1){
   background: #ee2d7b;
-}section .cntr1_4:nth-child(4n+2){
+} .cntr1_4:nth-child(4n+2){
   background: #53d39b;
-}section .cntr1_4:nth-child(4n+3){
+} .cntr1_4:nth-child(4n+3){
   background: #fbb041;
-}section .cntr1_4:nth-child(4n+0){
+} .cntr1_4:nth-child(4n+0){
   background: #A459FF;
 }
 
@@ -130,11 +174,14 @@ section .cntr1_4{
 
 footer{
   width: 100%;
-  height: 100px;
+  height: 10%;
   margin:  0;
+  display: flex;
   justify-content: flex-end;
   background: none;
-  margin: -100px auto;
+}footer .cntr1_4,header .cntr1_4{
+  height: 100%;
+  overflow: hidden;
 }
 
 
@@ -204,4 +251,36 @@ footer{
 
 #aboutPage .cntr1_4 h2{
   margin: 30% auto 0 auto;
+}#aboutPage .cntr1_4 p{
+  text-align: left;
+  width: 80%;
+  max-width: 300px;
+  margin: 10px auto;
+  line-height: 1.6;
+}
+
+#aboutPage .cntr1_4:nth-child(4n+1) h2{
+  color: #fbb041;
+}#aboutPage .cntr1_4:nth-child(4n+2) h2{
+  color: #ee2d7b;
+}#aboutPage .cntr1_4:nth-child(4n+3) h2{
+  color: #A459FF;
+}#aboutPage .cntr1_4:nth-child(4n+0) h2{
+  color: #53d39b;
+}
+
+
+#resume{
+}
+#resume h2{
+  width: 100%;
+
+}#resume span{
+  width: 50%;
+  margin: 0px auto 0px auto;
+  height: 400px;
+}
+#resume hr {
+  width:80%;
+  margin: auto;
 }
